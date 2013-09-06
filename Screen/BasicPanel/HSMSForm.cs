@@ -166,44 +166,38 @@ namespace BasicPanel
 		{
             InputControls.NumericTextBox box = sender as InputControls.NumericTextBox;
 
-			InputControls.Numpad pad = new InputControls.Numpad();
+            InputControls.Numpad.Pad.Minimum = box.Minimum;
+            InputControls.Numpad.Pad.Maximum = box.Maximum;
+            InputControls.Numpad.Pad.Text = box.Text;
+            InputControls.Numpad.Pad.Integer = true;
 
-            pad.Minimum = box.Minimum;
-            pad.Maximum = box.Maximum;
-            pad.Text = box.Text;
-            pad.Integer = true;
-
-			if (pad.ShowDialog() == DialogResult.OK)
+            if (InputControls.Numpad.Pad.ShowDialog() == DialogResult.OK)
 			{
-				box.Text = pad.Text;
+                box.Text = InputControls.Numpad.Pad.Text;
 			}
 		}
 
 		private void textBox_Mode_Click(object sender, EventArgs e)
 		{
-			InputControls.SelectEnum select = new InputControls.SelectEnum();
-
 			List<string> mode = new List<string>();
 
 			mode.Add("Passive");
 			mode.Add("Active");
 
-			select.Question = "Select Mode";
-			select.Command = mode;
+            InputControls.SelectEnum.Box.Question = "Select Mode";
+            InputControls.SelectEnum.Box.Command = mode;
 
-			if (select.ShowDialog() == DialogResult.OK)
+            if (InputControls.SelectEnum.Box.ShowDialog() == DialogResult.OK)
 			{
-				textBox_Mode.Text = select.SelectCommand;
+                textBox_Mode.Text = InputControls.SelectEnum.Box.SelectCommand;
 			}
 		}
 
 		private void textBox_ip_Click(object sender, EventArgs e)
 		{
-			InputControls.Keyboard board = new InputControls.Keyboard();
-
-			while (board.ShowDialog() == DialogResult.OK)
+            while (InputControls.Keyboard.Pad.ShowDialog() == DialogResult.OK)
 			{
-                string ip = board.Text;
+                string ip = InputControls.Keyboard.Pad.Text;
 
 				string[] addr = ip.Split(new Char[] {'.'});
 
@@ -221,18 +215,16 @@ namespace BasicPanel
 
 					if (ipCheck == true)
 					{
-                        textBox_ip.Text = board.Text;
+                        textBox_ip.Text = InputControls.Keyboard.Pad.Text;
 						break;
 					}
 				}
 
-				InputControls.SelectBox dlg = new InputControls.SelectBox();
+                InputControls.SelectBox.Box.Question = "Invalid IP Address.";
+                InputControls.SelectBox.Box.LeftCommand = "";
+                InputControls.SelectBox.Box.RightCommand = "OK";
 
-				dlg.Question = "Invalid IP Address.";
-				dlg.LeftCommand = "";
-				dlg.RightCommand = "OK";
-
-				dlg.ShowDialog();
+                InputControls.SelectBox.Box.ShowDialog();
 			}
 		}
 

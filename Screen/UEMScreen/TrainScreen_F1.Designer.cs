@@ -162,6 +162,7 @@
             this.imageOnOffUnknownAndTimer5 = new ImageOnOffUnknownAndTimer.ImageOnOffUnknownAndTimer();
             this.imageOnOffUnknownAndTimer27 = new ImageOnOffUnknownAndTimer.ImageOnOffUnknownAndTimer();
             this.fbElevator1 = new fbElevator.fbElevator();
+            this.adsClient1 = new TwinCATAdapter.ADSClient();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -2308,7 +2309,7 @@
             this.imageOnOffUnknownAndTimer11.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer11.BackgroundImage = global::UEMScreen.Properties.Resources.연한적색1;
             this.imageOnOffUnknownAndTimer11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageOnOffUnknownAndTimer11.CommComponent = this.opcClient2;
+            this.imageOnOffUnknownAndTimer11.CommComponent = this.adsClient1;
             this.imageOnOffUnknownAndTimer11.FirstTag = "PLC-XGK:M00905";
             this.imageOnOffUnknownAndTimer11.Image_off = global::UEMScreen.Properties.Resources.연한분홍;
             this.imageOnOffUnknownAndTimer11.Image_on = global::UEMScreen.Properties.Resources.연한적색;
@@ -2443,6 +2444,12 @@
             this.fbElevator1.UpdateMode = CommLib.UpdateMode.OnChange;
             this.fbElevator1.UpdateTime = 500;
             this.fbElevator1.Visible = false;
+            // 
+            // adsClient1
+            // 
+            this.adsClient1.ADSPort = TwinCATAdapter.ADSPorts.PLC1;
+            this.adsClient1.AMSNetID = "";
+            this.adsClient1.SynchronizingObject = this;
             // 
             // TrainScreen_F1
             // 
@@ -2743,5 +2750,6 @@
         private ImageOnOffUnknownAndTimerA.ImageOnOffUnknownAndTimerA imageOnOffUnknownAndTimerA3;
         private ImageOnOffUnknownAndTimerA.ImageOnOffUnknownAndTimerA imageOnOffUnknownAndTimerA2;
         private ImageOnOffUnknownAndTimer.ImageOnOffUnknownAndTimer imageOnOffUnknownAndTimer7;
+        private TwinCATAdapter.ADSClient adsClient1;
     }
 }

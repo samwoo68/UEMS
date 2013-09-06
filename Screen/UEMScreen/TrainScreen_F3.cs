@@ -73,5 +73,10 @@ namespace UEMScreen
             Temp_Set.Tag = "PLC-XGK:M00020";
             Temp_Set.Show();
         }
+
+        private void digitalBox2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -656,6 +656,7 @@
             this.analogBox2.Unit = "";
             this.analogBox2.UpdateMode = CommLib.UpdateMode.OnChange;
             this.analogBox2.UpdateTime = 500;
+            this.analogBox2.Load += new System.EventHandler(this.analogBox2_Load);
             // 
             // analogBox1
             // 
@@ -689,6 +690,7 @@
             this.analogBox1.Unit = "";
             this.analogBox1.UpdateMode = CommLib.UpdateMode.OnChange;
             this.analogBox1.UpdateTime = 500;
+            this.analogBox1.Load += new System.EventHandler(this.analogBox1_Load);
             // 
             // pictureBox10
             // 
@@ -1878,7 +1880,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1840, 915);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.imageOnOffUnknownAndTimer7);
@@ -1964,8 +1965,6 @@
             this.Controls.Add(this.imageOnOffUnknownAndTimer27);
             this.Controls.Add(this.eemsControl1);
             this.Name = "TrainScreen_F2";
-            this.ProjectPath = "C:\\UEMS-R1";
-            this.Resolution = IronPanel._Resolution.HD1080;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

@@ -159,6 +159,7 @@
             this.sb_Path_Log.Type = IronControls.IOType.OUTPUT;
             this.sb_Path_Log.UpdateMode = CommLib.UpdateMode.OnChange;
             this.sb_Path_Log.UpdateTime = 500;
+            this.sb_Path_Log.Load += new System.EventHandler(this.sb_Path_Log_Load);
             // 
             // textBox21
             // 
@@ -438,8 +439,8 @@
             this.analogBox4.Gain = 1D;
             this.analogBox4.GroupSeparator = false;
             this.analogBox4.Location = new System.Drawing.Point(246, 134);
-            this.analogBox4.Max = 999999999;
-            this.analogBox4.Min = 0;
+            this.analogBox4.Max = 999999999D;
+            this.analogBox4.Min = 0D;
             this.analogBox4.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox4.Name = "analogBox4";
             this.analogBox4.Offset = 0D;
@@ -468,8 +469,8 @@
             this.analogBox3.Gain = 1D;
             this.analogBox3.GroupSeparator = false;
             this.analogBox3.Location = new System.Drawing.Point(246, 89);
-            this.analogBox3.Max = 999999999;
-            this.analogBox3.Min = 0;
+            this.analogBox3.Max = 999999999D;
+            this.analogBox3.Min = 0D;
             this.analogBox3.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox3.Name = "analogBox3";
             this.analogBox3.Offset = 0D;
@@ -498,8 +499,8 @@
             this.analogBox2.Gain = 1D;
             this.analogBox2.GroupSeparator = false;
             this.analogBox2.Location = new System.Drawing.Point(246, 46);
-            this.analogBox2.Max = 999999999;
-            this.analogBox2.Min = 0;
+            this.analogBox2.Max = 999999999D;
+            this.analogBox2.Min = 0D;
             this.analogBox2.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox2.Name = "analogBox2";
             this.analogBox2.Offset = 0D;
@@ -546,8 +547,8 @@
             this.analogBox5.Gain = 1D;
             this.analogBox5.GroupSeparator = false;
             this.analogBox5.Location = new System.Drawing.Point(252, 139);
-            this.analogBox5.Max = 999999999;
-            this.analogBox5.Min = 0;
+            this.analogBox5.Max = 999999999D;
+            this.analogBox5.Min = 0D;
             this.analogBox5.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox5.Name = "analogBox5";
             this.analogBox5.Offset = 0D;
@@ -576,8 +577,8 @@
             this.analogBox6.Gain = 1D;
             this.analogBox6.GroupSeparator = false;
             this.analogBox6.Location = new System.Drawing.Point(252, 93);
-            this.analogBox6.Max = 999999999;
-            this.analogBox6.Min = 0;
+            this.analogBox6.Max = 999999999D;
+            this.analogBox6.Min = 0D;
             this.analogBox6.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox6.Name = "analogBox6";
             this.analogBox6.Offset = 0D;
@@ -606,8 +607,8 @@
             this.analogBox7.Gain = 1D;
             this.analogBox7.GroupSeparator = false;
             this.analogBox7.Location = new System.Drawing.Point(252, 50);
-            this.analogBox7.Max = 999999999;
-            this.analogBox7.Min = 0;
+            this.analogBox7.Max = 999999999D;
+            this.analogBox7.Min = 0D;
             this.analogBox7.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox7.Name = "analogBox7";
             this.analogBox7.Offset = 0D;
@@ -660,8 +661,8 @@
             this.analogBox16.Gain = 1D;
             this.analogBox16.GroupSeparator = false;
             this.analogBox16.Location = new System.Drawing.Point(258, 245);
-            this.analogBox16.Max = 999999999;
-            this.analogBox16.Min = 0;
+            this.analogBox16.Max = 999999999D;
+            this.analogBox16.Min = 0D;
             this.analogBox16.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox16.Name = "analogBox16";
             this.analogBox16.Offset = 0D;
@@ -690,8 +691,8 @@
             this.analogBox15.Gain = 1D;
             this.analogBox15.GroupSeparator = false;
             this.analogBox15.Location = new System.Drawing.Point(258, 207);
-            this.analogBox15.Max = 999999999;
-            this.analogBox15.Min = 0;
+            this.analogBox15.Max = 999999999D;
+            this.analogBox15.Min = 0D;
             this.analogBox15.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox15.Name = "analogBox15";
             this.analogBox15.Offset = 0D;
@@ -720,8 +721,8 @@
             this.analogBox14.Gain = 1D;
             this.analogBox14.GroupSeparator = false;
             this.analogBox14.Location = new System.Drawing.Point(258, 170);
-            this.analogBox14.Max = 999999999;
-            this.analogBox14.Min = 0;
+            this.analogBox14.Max = 999999999D;
+            this.analogBox14.Min = 0D;
             this.analogBox14.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox14.Name = "analogBox14";
             this.analogBox14.Offset = 0D;
@@ -750,8 +751,8 @@
             this.analogBox13.Gain = 1D;
             this.analogBox13.GroupSeparator = false;
             this.analogBox13.Location = new System.Drawing.Point(258, 128);
-            this.analogBox13.Max = 999999999;
-            this.analogBox13.Min = 0;
+            this.analogBox13.Max = 999999999D;
+            this.analogBox13.Min = 0D;
             this.analogBox13.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox13.Name = "analogBox13";
             this.analogBox13.Offset = 0D;
@@ -780,8 +781,8 @@
             this.analogBox12.Gain = 1D;
             this.analogBox12.GroupSeparator = false;
             this.analogBox12.Location = new System.Drawing.Point(258, 88);
-            this.analogBox12.Max = 999999999;
-            this.analogBox12.Min = 0;
+            this.analogBox12.Max = 999999999D;
+            this.analogBox12.Min = 0D;
             this.analogBox12.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox12.Name = "analogBox12";
             this.analogBox12.Offset = 0D;
@@ -810,8 +811,8 @@
             this.analogBox11.Gain = 1D;
             this.analogBox11.GroupSeparator = false;
             this.analogBox11.Location = new System.Drawing.Point(258, 44);
-            this.analogBox11.Max = 999999999;
-            this.analogBox11.Min = 0;
+            this.analogBox11.Max = 999999999D;
+            this.analogBox11.Min = 0D;
             this.analogBox11.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox11.Name = "analogBox11";
             this.analogBox11.Offset = 0D;
@@ -932,8 +933,8 @@
             this.analogBox10.Gain = 1D;
             this.analogBox10.GroupSeparator = false;
             this.analogBox10.Location = new System.Drawing.Point(258, 42);
-            this.analogBox10.Max = 999999999;
-            this.analogBox10.Min = 0;
+            this.analogBox10.Max = 999999999D;
+            this.analogBox10.Min = 0D;
             this.analogBox10.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox10.Name = "analogBox10";
             this.analogBox10.Offset = 0D;
@@ -978,8 +979,8 @@
             this.analogBox9.Gain = 1D;
             this.analogBox9.GroupSeparator = false;
             this.analogBox9.Location = new System.Drawing.Point(258, 89);
-            this.analogBox9.Max = 999999999;
-            this.analogBox9.Min = 0;
+            this.analogBox9.Max = 999999999D;
+            this.analogBox9.Min = 0D;
             this.analogBox9.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox9.Name = "analogBox9";
             this.analogBox9.Offset = 0D;
@@ -1008,8 +1009,8 @@
             this.analogBox8.Gain = 1D;
             this.analogBox8.GroupSeparator = false;
             this.analogBox8.Location = new System.Drawing.Point(258, 46);
-            this.analogBox8.Max = 999999999;
-            this.analogBox8.Min = 0;
+            this.analogBox8.Max = 999999999D;
+            this.analogBox8.Min = 0D;
             this.analogBox8.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox8.Name = "analogBox8";
             this.analogBox8.Offset = 0D;
@@ -1094,8 +1095,8 @@
             this.analogBox17.Gain = 1D;
             this.analogBox17.GroupSeparator = false;
             this.analogBox17.Location = new System.Drawing.Point(252, 93);
-            this.analogBox17.Max = 24;
-            this.analogBox17.Min = 0;
+            this.analogBox17.Max = 24D;
+            this.analogBox17.Min = 0D;
             this.analogBox17.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox17.Name = "analogBox17";
             this.analogBox17.Offset = 0D;
@@ -1200,8 +1201,8 @@
             this.analogBox1.Gain = 1D;
             this.analogBox1.GroupSeparator = false;
             this.analogBox1.Location = new System.Drawing.Point(252, 87);
-            this.analogBox1.Max = 999999999;
-            this.analogBox1.Min = 0;
+            this.analogBox1.Max = 999999999D;
+            this.analogBox1.Min = 0D;
             this.analogBox1.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox1.Name = "analogBox1";
             this.analogBox1.Offset = 0D;
@@ -1230,8 +1231,8 @@
             this.analogBox18.Gain = 1D;
             this.analogBox18.GroupSeparator = false;
             this.analogBox18.Location = new System.Drawing.Point(252, 45);
-            this.analogBox18.Max = 999999999;
-            this.analogBox18.Min = 0;
+            this.analogBox18.Max = 999999999D;
+            this.analogBox18.Min = 0D;
             this.analogBox18.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox18.Name = "analogBox18";
             this.analogBox18.Offset = 0D;
@@ -1302,8 +1303,8 @@
             this.analogBox19.Gain = 1D;
             this.analogBox19.GroupSeparator = false;
             this.analogBox19.Location = new System.Drawing.Point(252, 85);
-            this.analogBox19.Max = 999999999;
-            this.analogBox19.Min = 0;
+            this.analogBox19.Max = 999999999D;
+            this.analogBox19.Min = 0D;
             this.analogBox19.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox19.Name = "analogBox19";
             this.analogBox19.Offset = 0D;
@@ -1332,8 +1333,8 @@
             this.analogBox20.Gain = 1D;
             this.analogBox20.GroupSeparator = false;
             this.analogBox20.Location = new System.Drawing.Point(252, 41);
-            this.analogBox20.Max = 999999999;
-            this.analogBox20.Min = 0;
+            this.analogBox20.Max = 999999999D;
+            this.analogBox20.Min = 0D;
             this.analogBox20.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox20.Name = "analogBox20";
             this.analogBox20.Offset = 0D;
@@ -1417,8 +1418,8 @@
             this.analogBox21.Gain = 1D;
             this.analogBox21.GroupSeparator = false;
             this.analogBox21.Location = new System.Drawing.Point(252, 93);
-            this.analogBox21.Max = 999999999;
-            this.analogBox21.Min = -999999999;
+            this.analogBox21.Max = 999999999D;
+            this.analogBox21.Min = -999999999D;
             this.analogBox21.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox21.Name = "analogBox21";
             this.analogBox21.Offset = 0D;
@@ -1447,8 +1448,8 @@
             this.analogBox22.Gain = 1D;
             this.analogBox22.GroupSeparator = false;
             this.analogBox22.Location = new System.Drawing.Point(252, 47);
-            this.analogBox22.Max = 999999999;
-            this.analogBox22.Min = -999999999;
+            this.analogBox22.Max = 999999999D;
+            this.analogBox22.Min = -999999999D;
             this.analogBox22.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox22.Name = "analogBox22";
             this.analogBox22.Offset = 0D;
@@ -1516,7 +1517,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1840, 915);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.button1);
@@ -1533,7 +1533,6 @@
             this.Controls.Add(this.bt_readXML);
             this.Controls.Add(this.bt_save);
             this.Name = "ConfigScreenR2";
-            this.Resolution = IronPanel._Resolution.HD1080;
             this.Text = "ConfigScreen";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

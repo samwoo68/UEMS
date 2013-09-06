@@ -2326,28 +2326,12 @@ namespace BasicPanel
 						{
 							case 3:
 								{
-									InputControls.SelectBox dlg = new InputControls.SelectBox();
-
-									dlg.Question = "Recipe Upload Fail.(T3 Timeout)";
-									dlg.LeftCommand = "";
-									dlg.RightCommand = "OK";
-                                    dlg.Owner = this;
-									dlg.StartPosition = FormStartPosition.CenterScreen;
-
-									dlg.Show();
+                                    MessageBox.Show("Recipe Upload Fail.(T3 Timeout)");
 								}
 								break;
 							case 5:
 								{
-									InputControls.SelectBox dlg = new InputControls.SelectBox();
-
-									dlg.Question = "Recipe Download Fail.(T3 Timeout)";
-									dlg.LeftCommand = "";
-									dlg.RightCommand = "OK";
-                                    dlg.Owner = this;
-									dlg.StartPosition = FormStartPosition.CenterScreen;
-
-									dlg.Show();
+                                    MessageBox.Show("Recipe Download Fail.(T3 Timeout)");
 								}
 								break;
 							default:

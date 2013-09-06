@@ -99,6 +99,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TwinCATAdapter">
+      <HintPath>..\..\..\IronTools\TwinCATAdapter.dll</HintPath>
+    </Reference>
     <Reference Include="UserControlSample">
       <HintPath>..\UserControlSample\Bin\Debug\UserControlSample.dll</HintPath>
     </Reference>
@@ -133,6 +136,18 @@
     <Compile Include="ExtMonitor.designer.cs">
       <DependentUpon>ExtMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GasBox_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GasBox_Test.Designer.cs">
+      <DependentUpon>GasBox_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GasBoxCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GasBoxCalibration.Designer.cs">
+      <DependentUpon>GasBoxCalibration.cs</DependentUpon>
+    </Compile>
     <Compile Include="TempSet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,12 +159,6 @@
     </Compile>
     <Compile Include="ISLogDataScreen.Designer.cs">
       <DependentUpon>ISLogDataScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrainScreen_F1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrainScreen_F1.Designer.cs">
-      <DependentUpon>TrainScreen_F1.cs</DependentUpon>
     </Compile>
     <Compile Include="TrendScreen.cs">
       <SubType>Form</SubType>
@@ -238,6 +247,12 @@
     <EmbeddedResource Include="ExtMonitor.resx">
       <DependentUpon>ExtMonitor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GasBox_Test.resx">
+      <DependentUpon>GasBox_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GasBoxCalibration.resx">
+      <DependentUpon>GasBoxCalibration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TempSet.resx">
       <DependentUpon>TempSet.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,9 +267,6 @@
     <EmbeddedResource Include="LogDataScreen.resx">
       <DependentUpon>LogDataScreen.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrainScreen_F1.resx">
-      <DependentUpon>TrainScreen_F1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrendScreen.resx">
       <DependentUpon>TrendScreen.cs</DependentUpon>
@@ -331,6 +343,8 @@
       <DependentUpon>AlarmHistoryDataSet.xsd</DependentUpon>
     </None>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -408,6 +422,25 @@
     <None Include="Image\운전화면 이미지\대차이미지 전진.png" />
     <None Include="Image\운전화면 이미지\대차이미지 후진.png" />
     <None Include="Image\운전화면 이미지\스크랩엘레베이터.png" />
+    <None Include="Image\%28노랑%29소.png" />
+    <None Include="Image\%28녹색%29소.png" />
+    <None Include="Image\%28빨강%29소.png" />
+    <None Include="Image\%28파랑%29소.png" />
+    <None Include="Image\0102심볼마크.jpg" />
+    <None Include="Image\EEMS-R1 System image.png" />
+    <None Include="Image\InformationPanel_SXGA-for-EXT -1.png" />
+    <None Include="Image\InformationPanel_SXGA-for-EXT-2.png" />
+    <None Include="Image\가스량%28빨강%29.png" />
+    <None Include="Image\버너도면.png" />
+    <None Include="Image\버너불꽃.png" />
+    <None Include="Image\불꽃1-1.png" />
+    <None Include="Image\세아메카닉스 로고1.png" />
+    <None Include="Image\세아메카닉스 로고2.png" />
+    <None Include="Image\세아메카닉스-CI.jpg" />
+    <None Include="Image\세아조립-orgin.png" />
+    <None Include="Image\신진로 회사로고.png" />
+    <None Include="Image\용탕3.png" />
+    <None Include="Image\투명이미지-세아메카닉스-CI.jpg" />
     <Content Include="Resources\UBI.png" />
     <None Include="Image\투명이미지-세아용 박스.png" />
     <None Include="Image\투명이미지-신진로CI-회사명포함.png" />

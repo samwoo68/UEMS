@@ -183,7 +183,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -196,8 +195,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.timeControl);
             this.Name = "TitlePanel";
-            this.Resolution = IronPanel._Resolution.HD1080;
-            this.Size = new System.Drawing.Size(1920, 88);
+            this.ProjectPath = "";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

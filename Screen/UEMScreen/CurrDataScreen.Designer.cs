@@ -1390,7 +1390,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Tile;
             this.ClientSize = new System.Drawing.Size(1840, 915);
             this.Controls.Add(this.imageOnOffUnknownAndTimer1);

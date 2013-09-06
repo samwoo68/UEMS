@@ -49,7 +49,7 @@ namespace UEMScreen
 
             //opcClient1.Connect();  // KEPWARE
             opcClient2.Connect();  // OPC-HUB
-            //adsClient1.Connect();   //TwinCAT
+            adsClient1.Connect();   //TwinCAT
 
             //f = new ExtMonitor(ProjectPath);
             //f.Show();
@@ -86,7 +86,8 @@ namespace UEMScreen
 
             ironSANClient1.Disconnect();
             //opcClient1.Disconnect();
-            opcClient2.Disconnect();            
+            opcClient2.Disconnect();
+            adsClient1.Disconnect();
         }
 
         public override void ShowPanel(string user, int level)

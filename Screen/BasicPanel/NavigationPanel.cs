@@ -109,7 +109,7 @@ namespace BasicPanel
             }
         }
 
-        public override void DisapperAlarm(IronPanel.AlarmEventArgs e)
+        public override void DisappearAlarm(IronPanel.AlarmEventArgs e)
         {
              listView_alarm.Items.RemoveByKey(e.alid.ToString());
              if (listView_alarm.Items.Count > 0)

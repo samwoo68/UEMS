@@ -63,6 +63,7 @@
             this.selGraphViewC1.Size = new System.Drawing.Size(1184, 768);
             this.selGraphViewC1.TabIndex = 143;
             this.selGraphViewC1.Tags = ((System.Collections.Generic.List<string>)(resources.GetObject("selGraphViewC1.Tags")));
+            this.selGraphViewC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.selGraphViewC1.UpdateMode = CommLib.UpdateMode.OnChange;
             this.selGraphViewC1.UpdateTime = 500;
             this.selGraphViewC1.Visible = false;
@@ -225,7 +226,7 @@
             this.imageLabelBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imageLabelBox2.Label_Color = System.Drawing.Color.Maroon;
             this.imageLabelBox2.Label_Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.imageLabelBox2.Label_Location = new System.Drawing.Point(6999, 1376);
+            this.imageLabelBox2.Label_Location = new System.Drawing.Point(8999, 1720);
             this.imageLabelBox2.Label_Text = "종료";
             this.imageLabelBox2.Location = new System.Drawing.Point(25, 198);
             this.imageLabelBox2.Margin = new System.Windows.Forms.Padding(5);
@@ -240,7 +241,7 @@
             this.imageLabelBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imageLabelBox1.Label_Color = System.Drawing.Color.Maroon;
             this.imageLabelBox1.Label_Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.imageLabelBox1.Label_Location = new System.Drawing.Point(6999, 1376);
+            this.imageLabelBox1.Label_Location = new System.Drawing.Point(8999, 1720);
             this.imageLabelBox1.Label_Text = "시작";
             this.imageLabelBox1.Location = new System.Drawing.Point(25, 165);
             this.imageLabelBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -279,11 +280,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1840, 915);
             this.Controls.Add(this.selGraphViewC1);
             this.Controls.Add(this.groupBox1);
             this.Name = "TrendScreen";
+            this.ProjectPath = "C:\\UEMS-R1";
             this.Resolution = IronPanel._Resolution.HD1080;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);

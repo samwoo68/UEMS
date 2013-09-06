@@ -2271,6 +2271,11 @@ namespace UEMScreen
 
         }
 
+        private void sb_Path_Log_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

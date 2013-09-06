@@ -1449,8 +1449,8 @@
             this.analogBox7.Gain = 0.01D;
             this.analogBox7.GroupSeparator = false;
             this.analogBox7.Location = new System.Drawing.Point(1263, 766);
-            this.analogBox7.Max = 999999999;
-            this.analogBox7.Min = 0;
+            this.analogBox7.Max = 999999999D;
+            this.analogBox7.Min = 0D;
             this.analogBox7.Mode = IronControls._Mode.VALUE_DISPLAY;
             this.analogBox7.Name = "analogBox7";
             this.analogBox7.Offset = 0D;
@@ -1468,6 +1468,7 @@
             // opcClient2
             // 
             this.opcClient2.Group = "MyGroup";
+            this.opcClient2.ItemUpdate = true;
             this.opcClient2.Server = "Intellution.LSEOPC";
             this.opcClient2.SynchronizingObject = this;
             this.opcClient2.Topic = "";
@@ -1604,7 +1605,7 @@
             this.eemsControl1.Tags = ((System.Collections.Generic.List<string>)(resources.GetObject("eemsControl1.Tags")));
             this.eemsControl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.eemsControl1.UpdateMode = CommLib.UpdateMode.OnChange;
-            this.eemsControl1.UpdateTime = 500;       
+            this.eemsControl1.UpdateTime = 500;
             this.eemsControl1.Click += new System.EventHandler(this.eemsControl1_Click);
             // 
             // pictureBox37
@@ -2239,6 +2240,7 @@
             this.imageOnOffUnknownAndTimer1.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer1.BackgroundImage = global::UEMScreen.Properties.Resources.traducer_00;
             this.imageOnOffUnknownAndTimer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageOnOffUnknownAndTimer1.CommComponent = this.opcClient2;
             this.imageOnOffUnknownAndTimer1.FirstTag = "Channel1.EEMS-M1.M00900";
             this.imageOnOffUnknownAndTimer1.Image_off = null;
             this.imageOnOffUnknownAndTimer1.Image_on = null;
@@ -2263,6 +2265,7 @@
             this.imageOnOffUnknownAndTimer9.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer9.BackgroundImage = global::UEMScreen.Properties.Resources.투명이미지_BELLOWS;
             this.imageOnOffUnknownAndTimer9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageOnOffUnknownAndTimer9.CommComponent = this.opcClient2;
             this.imageOnOffUnknownAndTimer9.FirstTag = "";
             this.imageOnOffUnknownAndTimer9.Image_off = null;
             this.imageOnOffUnknownAndTimer9.Image_on = null;
@@ -2437,6 +2440,7 @@
             this.imageOnOffUnknownAndTimer8.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer8.BackgroundImage = global::UEMScreen.Properties.Resources.투명이미지_BELLOWS;
             this.imageOnOffUnknownAndTimer8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageOnOffUnknownAndTimer8.CommComponent = this.opcClient2;
             this.imageOnOffUnknownAndTimer8.FirstTag = "";
             this.imageOnOffUnknownAndTimer8.Image_off = null;
             this.imageOnOffUnknownAndTimer8.Image_on = null;
@@ -2461,6 +2465,7 @@
             this.imageOnOffUnknownAndTimer6.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer6.BackgroundImage = global::UEMScreen.Properties.Resources.투명이미지_BELLOWS;
             this.imageOnOffUnknownAndTimer6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageOnOffUnknownAndTimer6.CommComponent = this.opcClient2;
             this.imageOnOffUnknownAndTimer6.FirstTag = "";
             this.imageOnOffUnknownAndTimer6.Image_off = null;
             this.imageOnOffUnknownAndTimer6.Image_on = null;
@@ -2485,6 +2490,7 @@
             this.imageOnOffUnknownAndTimer7.BackColor = System.Drawing.Color.Transparent;
             this.imageOnOffUnknownAndTimer7.BackgroundImage = global::UEMScreen.Properties.Resources.투명이미지_BELLOWS;
             this.imageOnOffUnknownAndTimer7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageOnOffUnknownAndTimer7.CommComponent = this.opcClient2;
             this.imageOnOffUnknownAndTimer7.FirstTag = "";
             this.imageOnOffUnknownAndTimer7.Image_off = null;
             this.imageOnOffUnknownAndTimer7.Image_on = null;
@@ -2606,7 +2612,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1840, 915);
             this.Controls.Add(this.bt_PLC_EXEC);
             this.Controls.Add(this.pictureBox6);
@@ -2762,8 +2767,9 @@
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox147);
             this.Name = "GasFlowScreen";
+            this.ProjectPath = "C:\\UEMS-R1";
             this.Resolution = IronPanel._Resolution.HD1080;
-            this.Text = "GasFlowScreen";           
+            this.Text = "GasFlowScreen";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
