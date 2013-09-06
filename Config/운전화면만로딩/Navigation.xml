@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<ArrayOfNavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NavigationInfo>
+    <name>Jobs</name>
+    <level>10</level>
+    <enableImage>.\Image\button_jobs_enable.png</enableImage>
+    <disableImage>.\Image\button_jobs_disable.png</disableImage>
+    <pressImage>.\Image\button_jobs_press.png</pressImage>
+    <subNavi>     
+      <SubNaviInfo>
+        <enable>true</enable>
+        <name>운전화면</name>
+        <level>10</level>
+        <path>.\Screen\SampleScreen.dll</path>
+        <instance>SampleScreen.TrainScreen_F2</instance>
+        <argument>
+        </argument>
+      </SubNaviInfo> 
+    </subNavi>
+  </NavigationInfo>  
+  <NavigationInfo>
+    <name>Config</name>
+    <level>1</level>
+    <enableImage>.\Image\button_config_enable.png</enableImage>
+    <disableImage>.\Image\button_config_disable.png</disableImage>
+    <pressImage>.\Image\button_config_press.png</pressImage>
+    <subNavi>
+      <SubNaviInfo>
+        <enable>true</enable>
+        <name>파라메터설정</name>
+        <level>1</level>
+        <path>.\Screen\SampleScreen.dll</path>
+        <instance>SampleScreen.ConfigScreenR2</instance>
+        <argument>
+        </argument>
+      </SubNaviInfo>      
+    </subNavi>
+  </NavigationInfo> 
+</ArrayOfNavigationInfo>

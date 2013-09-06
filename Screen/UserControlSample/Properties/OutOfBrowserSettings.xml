@@ -1,0 +1,7 @@
+<OutOfBrowserSettings ShortName="UserControlSample 응용 프로그램" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>UserControlSample 응용 프로그램이 가정, 직장의 바탕 화면에 있거나 이동 중입니다.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="UserControlSample 응용 프로그램" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.Icons />
+</OutOfBrowserSettings>

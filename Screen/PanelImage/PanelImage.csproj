@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{305F3B7C-51DE-4810-B1B9-EFBA0B89CBB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PanelImage</RootNamespace>
+    <AssemblyName>PanelImage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\button_quit_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\button_quit_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\button_quit_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\CommandPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\CommandPanel_SVGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\CommandPanel_SXGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\CommandPanel_WSXGAPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\CommandPanel_XGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationPanel_SVGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationPanel_SXGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationPanel_WSXGAPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationPanel_XGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\InformationTabPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\NavigationPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\NavigationPanel_SVGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\NavigationPanel_SXGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\NavigationPanel_WSXGAPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\NavigationPanel_XGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\SubnavPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\SubnavPanel_SVGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\SubnavPanel_SXGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\SubnavPanel_WSXGAPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\SubnavPanel_XGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TabnavPanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TitlePanel_HD1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TitlePanel_SVGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TitlePanel_SXGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TitlePanel_WSXGAPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Panel\TitlePanel_XGA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\Subnav_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\Subnav_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Button\Subnav_disable.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY /Y "$(TargetPath)" "$(SolutionDir)$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

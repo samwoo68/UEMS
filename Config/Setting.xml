@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="Version" value="EEMS-M1 Ver.-1.0"/>
+    <add key="PanelImage" value=".\Screen\PanelImage.dll"/>
+    <add key="NavButtonLocation.X" value="15"/>
+    <add key="NavButtonLocation.Y" value="2"/>
+    <add key="NavButtonSize.Width" value="92"/>
+    <add key="NavButtonSize.Height" value="64"/>
+    <add key="NavButtonGap" value="5"/>
+    <add key="SubButtonLocation.X" value="0"/>
+    <add key="SubButtonLocation.Y" value="0"/>
+    <add key="SubButtonSize.Width" value="73"/>
+    <add key="SubButtonSize.Height" value="101"/>
+    <add key="SubButtonGap" value="5"/>
+    <add key="CommandPanel" value="None"/>
+    <add key="SubnavPanel" value="Right"/>
+    <add key="Resolution" value="HD1080"/>
+    <add key="ScriptEnable" value="False"/>
+    <add key="DebugLog" value="False"/>
+    <add key="Port" value="2048"/>
+    <add key="User" value="engineer"/>
+    <add key="Password" value="1111"/>
+    <add key="AlarmFormPopUp" value="False"/>
+    <add key="AlarmFormAssembly" value=".\Screen\BasicPanel.dll"/>
+    <add key="AlarmFormName" value="BasicPanel.AlarmForm"/>
+    <add key="GEMFormAssembly" value=".\Screen\BasicPanel.dll" />
+    <add key="GEMFormName" value="BasicPanel.GEMForm" /> 
+    <add key="TitlePanelAssembly" value=".\Screen\BasicPanel.dll"/>
+    <add key="TitlePanelName" value="BasicPanel.TitlePanel"/>
+    <add key="NavigationPanelAssembly" value=".\Screen\BasicPanel.dll"/>
+    <add key="NavigationPanelName" value="BasicPanel.NavigationPanel"/>
+    <add key="CommandPanelAssembly" value="IronPanel.dll" /> 
+    <add key="CommandPanelName" value="IronPanel.CommandPanel" />
+    <add key="SubnavPanelAssembly" value=".\Screen\BasicPanel.dll"/> 
+    <add key="SubnavPanelName" value="BasicPanel.SubnavPanel"/>
+    <add key="IntroPanelAssembly" value=".\Screen\BasicPanel.dll"/>
+    <add key="IntroPanelName" value="BasicPanel.IntroPanel"/>
+  </appSettings>
+</configuration>

@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F94E88A-4126-4F6C-8814-7B27E8ECBF4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BasicPanel</RootNamespace>
+    <AssemblyName>BasicPanel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="InputControls">
+      <HintPath>..\..\..\IronTools\InputControls.DLL</HintPath>
+    </Reference>
+    <Reference Include="IronControls">
+      <HintPath>..\..\..\IronTools\IronControls.DLL</HintPath>
+    </Reference>
+    <Reference Include="IronPanel">
+      <HintPath>..\..\..\IronTools\IronPanel.DLL</HintPath>
+    </Reference>
+    <Reference Include="IronSANAdapter">
+      <HintPath>..\..\..\IronTools\IronSANAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="OPCAdapter">
+      <HintPath>..\..\..\IronTools\OPCAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmData.cs" />
+    <Compile Include="AlarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmForm.designer.cs">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AlarmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AlarmControl.Designer.cs">
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandPanel.Designer.cs">
+      <DependentUpon>CommandPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EquipStatusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EquipStatusControl.Designer.cs">
+      <DependentUpon>EquipStatusControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HostControl.Designer.cs">
+      <DependentUpon>HostControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventData.cs" />
+    <Compile Include="GEMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GEMForm.designer.cs">
+      <DependentUpon>GEMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HSMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HSMSForm.designer.cs">
+      <DependentUpon>HSMSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniConfig.cs" />
+    <Compile Include="IntroPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroPanel.Designer.cs">
+      <DependentUpon>IntroPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationPanel.Designer.cs">
+      <DependentUpon>NavigationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SignalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SignalControl.Designer.cs">
+      <DependentUpon>SignalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SECSII.cs" />
+    <Compile Include="SubnavPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubnavPanel.Designer.cs">
+      <DependentUpon>SubnavPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeControl.Designer.cs">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TerminalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TerminalForm.designer.cs">
+      <DependentUpon>TerminalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestControl.Designer.cs">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TitlePanel.Designer.cs">
+      <DependentUpon>TitlePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VariableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmForm.resx">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AlarmControl.resx">
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EquipStatusControl.resx">
+      <DependentUpon>EquipStatusControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HostControl.resx">
+      <DependentUpon>HostControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GEMForm.resx">
+      <DependentUpon>GEMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HSMSForm.resx">
+      <DependentUpon>HSMSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroPanel.resx">
+      <DependentUpon>IntroPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationPanel.resx">
+      <DependentUpon>NavigationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SignalControl.resx">
+      <DependentUpon>SignalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeControl.resx">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerminalForm.resx">
+      <DependentUpon>TerminalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestControl.resx">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitlePanel.resx">
+      <DependentUpon>TitlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Config\FAInfo.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Image\Alarm_blink.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VariableDataSet.xsc">
+      <DependentUpon>VariableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VariableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VariableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VariableDataSet.xss">
+      <DependentUpon>VariableDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Alarm_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Alarm_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Alarm_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DateTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\EquipStatus_blink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\EquipStatus_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\EquipStatus_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\EquipStatus_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommConn_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommConn_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommConn_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommDisconn_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommDisconn_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HostCommDisconn_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Login_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Login_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Logout_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Logout_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\SignalTower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\SignalTower_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\SignalTower_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\SignalTower_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXPRO_XELib">
+      <Guid>{8597278C-E1C8-42D5-8FC5-4211ADDABD3F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XPRO_XELib">
+      <Guid>{8597278C-E1C8-42D5-8FC5-4211ADDABD3F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\GemForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HSMSForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Variable.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logo-2.png" />
+    <None Include="Resources\Logo-1.PNG" />
+    <None Include="Resources\시계제거.png" />
+    <None Include="Resources\IntoS.png" />
+    <None Include="Resources\초기화면-꽃밭41.jpg" />
+    <None Include="Resources\초기화면-꽃밭4.jpg" />
+    <None Include="Resources\세아메카닉스 로고3.png" />
+    <None Include="Resources\세아메카닉스 로고2.png" />
+    <None Include="Resources\세아메카닉스 로고1.png" />
+    <None Include="Resources\메인화면.png" />
+    <None Include="Resources\CI-임시버튼R1.png" />
+    <None Include="Resources\에너지 효율관리 시스템%28레드%29.png" />
+    <None Include="Resources\CI-임시버튼.png" />
+    <None Include="Resources\에너지 효율관리 시스템%28검정%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY /Y "$(TargetPath)" "$(SolutionDir)$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

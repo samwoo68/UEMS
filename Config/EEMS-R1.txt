@@ -1,0 +1,82 @@
+//Name                | Addr  | Index |Timeout|Offset | Gain  |  Min  |  Max
+
+%AnalogInput
+//
+
+%AnalogOutput
+pulse_per_gas        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+gas_per_KRW        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+ingot_per_kg       |   0   |   0   |   1   |   0   |   0   |   0   |   0
+scrap_per_kg       |   0   |   0   |   1   |   0   |   0   |   0   |   0
+plc_watt_per_pc_watt    |   0   |   0   |   1   |   0   |   0   |   0   |   0
+pc_watt_per_KRW        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+PLC_Max_Gas        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+PLC_Max_Watt        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+tower_temp_factor   |   0   |   0   |   1   |   0   |   0   |   0   |   0
+tower_temp_factor_set |   0   |   0   |   1   |   0   |   0   |   0   |   0
+furnace_temp_factor   |   0   |   0   |   1   |   0   |   0   |   0   |   0
+furnace_temp_factor_set  |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Num_Of_Workgroups     |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Put_All_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Put_All_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Put_All_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Put_All_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Watt_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Watt_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Watt_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Watt_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Gas_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Gas_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Gas_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Gas_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+m3Ton_Per_Hour        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+m3Ton_Per_Day        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+m3Ton_Per_Month        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+m3Ton_Per_Year        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_HourPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_DayPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_MonthPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Ingot_Per_YearPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_HourPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_DayPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_MonthPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+Scrap_Per_YearPe        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+
+
+%DigitalInput
+DI1                    |   0   |   0   |   1   |   0   |   0   |   0   |   0
+DI2                    |   0   |   0   |   1   |   0   |   0   |   0   |   0
+
+
+%DigitalOutput
+Hello                  |   100   |   0   |   1   |   0   |   0   |   0   |   0
+Test1                  |     0   |   0   |   1   |   0   |   0   |   0   |   0
+Test2                  |     0   |   0   |   1   |   0   |   0   |   0   |   0
+Test3                  |     0   |   0   |   1   |   0   |   0   |   0   |   0
+Test4                  |     0   |   0   |   1   |   0   |   0   |   0   |   0
+
+
+
+%StringInput
+//Path_Log        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+
+%StringOutput
+Path_Log        |   0   |   0   |   1   |   0   |   0   |   0   |   0
+ReferenceTime_Workday    |   0   |   0   |   1   |   0   |   0   |   0   |   0
+
+%Variable
+//Name                | Addr  | Index |Timeout|Offset | Gain  |  Min  |  Max  |      Variable Name    |  Type  | Array
+
+%Volatile
+//Name                | Addr  | Index |Timeout|Offset | Gain  |  Min  |  Max  | Setting
+//Test                  |   0   |   0   |   1   |   0   |   0   |   0   |   0   |    0

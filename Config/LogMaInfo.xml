@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Item>
+    <Period>
+      <string>12</string>
+    </Period>
+    <LastCheckDate>
+      <string>2013-05</string>
+    </LastCheckDate>
+    <Enable>
+      <string>true</string>
+    </Enable>
+  </Item>
+</root>

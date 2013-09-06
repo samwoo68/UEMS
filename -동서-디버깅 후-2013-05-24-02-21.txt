@@ -1,0 +1,1 @@
+axShockwaveFlash1.CallFunction("<invoke name=\"" + command + "\" returntype=\"xml\"><arguments><string>" + lamp + "</string><string>" + power.ToString() + "</string><string>" + error + "</string></arguments></invoke>");
