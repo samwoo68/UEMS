@@ -9,22 +9,22 @@
     <subNavi>     
       <SubNaviInfo>
         <enable>true</enable>
-        <name>운전화면</name>
+        <name>Calibration</name>
         <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.TrainScreen_F2</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>      
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>생산현황</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.CurrDataScreen</instance>
+        <path>.\Screen\UEMScreen.dll</path>
+        <instance>UEMScreen.GasBoxCalibration</instance>
         <argument>
         </argument>
       </SubNaviInfo>
+      <SubNaviInfo>
+        <enable>true</enable>
+        <name>GasBoxTest</name>
+        <level>1</level>
+        <path>.\Screen\UEMScreen.dll</path>
+        <instance>UEMScreen.GasBox_Test</instance>
+        <argument>
+        </argument>
+      </SubNaviInfo>      
     </subNavi>
   </NavigationInfo>
   <NavigationInfo>
@@ -34,15 +34,6 @@
     <disableImage>.\Image\button_system_disable.png</disableImage>
     <pressImage>.\Image\button_system_press.png</pressImage>
     <subNavi>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>가스플로우</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.GasFlowScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
     </subNavi>
   </NavigationInfo>
   <NavigationInfo>
@@ -52,24 +43,6 @@
     <disableImage>.\Image\button_config_disable.png</disableImage>
     <pressImage>.\Image\button_config_press.png</pressImage>
     <subNavi>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>파라메터설정</name>
-        <level>1</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.ConfigScreenR2</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>false</enable>
-        <name>정보관리</name>
-        <level>10</level>
-        <path>.\Screen\UBI_2.dll</path>
-        <instance>UBI_2.Main</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
     </subNavi>
   </NavigationInfo>
   <NavigationInfo>
@@ -79,69 +52,6 @@
     <disableImage>.\Image\button_log_disable.png</disableImage>
     <pressImage>.\Image\button_log_press.png</pressImage>
     <subNavi>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>데이터로그</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.LogDataScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>false</enable>
-        <name>데이터트렌드</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.TrendScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>알람로그</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.AlarmHistory</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>전력/가스 데이터로그</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.EGLogDataScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>인고트/스크랩 데이터로그</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.ISLogDataScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>true</enable>
-        <name>온도 데이터로그</name>
-        <level>10</level>
-        <path>.\Screen\SampleScreen.dll</path>
-        <instance>SampleScreen.TPLogDataScreen</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
-      <SubNaviInfo>
-        <enable>false</enable>
-        <name>프린터</name>
-        <level>10</level>
-        <path>.\Screen\ListViewPrinterForHMI.dll</path>
-        <instance>ListViewPrinterForHMI.ListViewPrinterForHMI</instance>
-        <argument>
-        </argument>
-      </SubNaviInfo>
     </subNavi>
   </NavigationInfo>
 </ArrayOfNavigationInfo>
